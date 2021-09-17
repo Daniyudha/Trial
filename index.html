@@ -24,9 +24,10 @@
     <header class="header" id="header">
         <nav class="container navbar navbar-expand-lg navbar-light px-4">
             <a class="navbar-brand" href="index.html">track<b>view</b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="line1 ham"></div>
+                <div class="line2 ham"></div>
+                <div class="line3 ham"></div>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
@@ -149,6 +150,9 @@
         </div>
 
         <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6 col-sm-10 d-block d-md-none">
+                <img class="img-fluid" src="images/Component-2.svg" alt="" srcset="">
+            </div>
             <div class="col-lg-5 col-md-6 col-sm-10">
                 <img class="aksen" src="images/aksen.svg" alt="" srcset="">
                 <h4 class="mt-3 text-purple-dark font-weight-bold">Accurate payments, with free invoicing.</h4>
@@ -157,7 +161,7 @@
                     an advantage to bill accurately to their clients and never miss payments. Accutrackr is integrated
                     with Stripe, Payoneer and PayPal for secure and fast transactions.</p>
             </div>
-            <div class="col-lg-7 col-md-6 col-sm-10">
+            <div class="col-lg-7 col-md-6 col-sm-10 d-none d-md-block">
                 <img class="img-fluid" src="images/Component-2.svg" alt="" srcset="">
             </div>
         </div>
@@ -182,27 +186,33 @@
     <div class="container">
         <h3 class="font-weight-bold mt-section mb-5">Smart & Automatic Features</h3>
         <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-3 col-md-3 col-3">
                 <div class="tab">
                     <button class="tablinks active" onclick="openCity(event, '1')">
                         <h5 class="font-weight-bold">Automatic and custom screenshots</h5>
-                        <p class="text-secondary">Track desktop activity of employees and freelancers with automatic
+                        <p class="text-secondary d-none d- lg-block">Track desktop activity of employees and freelancers with automatic
                             screenshots, set with custom settings.</p>
                     </button>
                     <button class="tablinks" onclick="openCity(event, '2')">
-                        <h5 class="font-weight-bold">Automatic and custom screenshots</h5>
-                        <p class="text-secondary">Track desktop activity of employees and freelancers with automatic
+                        <h5 class="font-weight-bold">Automatic and custom camshots</h5>
+                        <p class="text-secondary d-none d- lg-block">Track desktop activity of employees and freelancers with automatic
                             screenshots, set with custom settings.</p>
                     </button>
                     <button class="tablinks" onclick="openCity(event, '3')">
-                        <h5 class="font-weight-bold">Automatic and custom screenshots</h5>
-                        <p class="text-secondary">Track desktop activity of employees and freelancers with automatic
+                        <h5 class="font-weight-bold">Automatic Location Tracking</h5>
+                        <p class="text-secondary d-none d- lg-block">Track desktop activity of employees and freelancers with automatic
+                            screenshots, set with custom settings.</p>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, '4')">
+                        <h5 class="font-weight-bold">Automatic Alerts</h5>
+                        <p class="text-secondary d-none d- lg-block">Track desktop activity of employees and freelancers with automatic
                             screenshots, set with custom settings.</p>
                     </button>
                 </div>
             </div>
-            <div class="vl-2 mx-auto"></div>
-            <div class="col-lg-6">
+
+            <div class="vl-2 mx-auto d-none d-lg-block"></div>
+            <div class="col-lg-8 col-md-8 col-8">
                 <div id="1" class="tabcontent">
                     <img class="img-fluid" src="images/smart-feature.svg" alt="">
                 </div>
@@ -211,6 +221,9 @@
                 </div>
                 <div id="3" class="tabcontent">
                     <img class="img-fluid" src="images/smart-feature.svg" alt="">
+                </div>
+                <div id="4" class="tabcontent">
+                    <img class="img-fluid" src="images/Component-3.svg" alt="">
                 </div>
             </div>
         </div>
@@ -221,11 +234,11 @@
     <div class="container">
         <div class="text-center">
             <h3 class="font-weight-bold mt-section">It’s more than just time tracking</h3>
-            <div class="row mt-5">
+            <div class="row justify-content-center mt-5">
                 <div class="col-md-4 col-10">
                     <a href="" class="track-box">
                         <div class="track-box">
-                            <div class="card-body py-5">
+                            <div class="card-body">
                                 <div class="text-left">
                                     <img src="images/track-time.svg" alt="" srcset="">
                                     <h4 class="font-weight-bold mt-3">Track time</h4>
@@ -240,7 +253,7 @@
                 <div class="col-md-4 col-10">
                     <a href="" class="track-box">
                         <div class="track-box">
-                            <div class="card-body py-5">
+                            <div class="card-body">
                                 <div class="text-left">
                                     <img src="images/track-project.svg" alt="" srcset="">
                                     <h4 class="font-weight-bold mt-3">Track projects</h4>
@@ -253,7 +266,7 @@
                 <div class="col-md-4 col-10">
                     <a href="" class="track-box">
                         <div class="track-box">
-                            <div class="card-body py-5">
+                            <div class="card-body">
                                 <div class="text-left">
                                     <img src="images/track-teams.svg" alt="" srcset="">
                                     <h4 class="font-weight-bold mt-3">Track teams</h4>
@@ -290,27 +303,27 @@
     <!-- START BLOG -->
     <div class="container mt-section">
         <h3 class="font-weight-bold text-purple-dark mb-5">Read our blogs to improve your work environment</h3>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-10">
+                <div class="card mb-md-0 mb-4">
                     <div class="card-body">
-                        <img src="images/blog-1.svg" alt="" srcset="">
+                        <img class="img-fluid" src="images/blog-1.svg" alt="" srcset="">
                         <p>How to Measure Communication in The Workplace: A Complete Guide</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card">
+            <div class="col-md-4 col-10">
+                <div class="card mb-md-0 mb-4">
                     <div class="card-body">
-                        <img src="images/blog-2.svg" alt="" srcset="">
+                        <img class="img-fluid" src="images/blog-2.svg" alt="" srcset="">
                         <p>How To Create The Perfect Work Schedule For Your Team: A Complete Guide</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card">
+            <div class="col-md-4 col-10">
+                <div class="card mb-md-0 mb-4">
                     <div class="card-body">
-                        <img src="images/blog-3.svg" alt="" srcset="">
+                        <img class="img-fluid" src="images/blog-3.svg" alt="" srcset="">
                         <p>Using WhatsApp For Organizational Communication? Think Again!</p>
                     </div>
                 </div>
@@ -365,16 +378,16 @@
         <div class="text-center">
             <img src="images/footer-logo.svg" alt="">
             <div class="row nav-footer mt-4 justify-content-center">
-                <div class="mx-5">
+                <div class="col-md-2">
                     <a href="#">Pricing</a>
                 </div>
-                <div class="mx-5">
+                <div class="col-md-2">
                     <a href="#">FAQ</a>
                 </div>
-                <div class="mx-5">
+                <div class="col-md-2">
                     <a href="#">Term Of Service</a>
                 </div>
-                <div class="mx-5">
+                <div class="col-md-2">
                     <a href="#">Privacy Policy</a>
                 </div>
             </div>

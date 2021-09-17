@@ -18,6 +18,47 @@ body{
     font-weight: bold;
 }
 
+.navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+    background-color: #7B68EE;
+}
+
+.ham {
+    transition: width 0.3s;
+    background: #ffffff;
+}
+
+.line1, .line3  {
+    width: 28px;
+    height: 2px;
+    margin: 6px;    
+    transition:  0.4s;
+    
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.dropdown-item {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.collapse{
+    background-color: #ffff;
+    box-shadow: 0px 2px 8px -3px #6A6768;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #000000;
     transition: all 0.4s;
@@ -256,6 +297,12 @@ body{
     }
 }
 
+@media (max-width:425px) {
+    .download-button{
+        max-width: 70px;
+    }
+}
+
 .vl {
     border-left: 2px solid #c5c5c5;
     height: 64px;
@@ -263,7 +310,7 @@ body{
 
 .vl-2 {
     border-left: 2px solid #dfdbdb;
-    height: 400px;
+    height: 500px;
 }
 /* end */
 
@@ -284,35 +331,17 @@ body{
 }
 /* end */
 
-/* track time */
-.track-box{
-    box-shadow: #000000;
-    border-radius: 10px;
-    background-color: #f7f5f5 ;
-    color: black;
-    margin: 20px;
-    transition: all 0.2s;
-}
-
-.track-box p{
-    margin-bottom: 0;
-}
-@media (min-width: 992px) {
-    .track-box:hover{
-        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        background-color: #ffffff ;
-        text-decoration: none;
-        transform: scale(1.15);
-        transition: all 0.2s;
-    }
-}
-/* end */
-
 /* smart features */
 .tab {
     float: left;
+}
 
+.tab h5{
+    font-size: 14px;
+}
+
+.tab p{
+    font-size: 10px;
 }
 
 .tab button {
@@ -347,16 +376,147 @@ body{
     display: none;
     float: left;
     padding: 0px 12px;
-    height: 300px;
+    /* height: 300px; */
+}
+
+@media (max-width:768px) {
+    .tab button{
+        height: 60px;
+        padding: 12px 6px;
+    }
+    .mt-section{
+        margin-top: 120px;
+    }
+}
+@media (max-width:425px) {
+    .tab button{
+        height: 60px;
+        padding: 9px 6px;
+    }
+    .tab h5{
+        font-size: 10px;
+    }
+    .mt-section{
+        margin-top: 90px;
+    }
+}
+@media (max-width:320px) {
+    .tab button{
+        height: 45px;
+        padding: 9px 6px;
+    }
+    .tab h5{
+        font-size: 8px;
+    }
+    .mt-section{
+        margin-top: 60px;
+    }
+}
+/* end */
+
+/* track time */
+.track-box{
+    box-shadow: #000000;
+    border-radius: 10px;
+    background-color: #f7f5f5 ;
+    color: black;
+    /* margin: 20px; */
+    transition: all 0.2s;
+}
+
+.track-box p{
+    margin-bottom: 0;
+}
+@media (min-width: 992px) {
+    .track-box:hover{
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #ffffff ;
+        text-decoration: none;
+        transform: scale(1.15);
+        transition: all 0.2s;
+    }
+}
+@media (max-width:768px) {
+    .track-box{
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .track-box .card-body{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        height: 200px;
+    }
+    .track-box img{
+        max-width: 40px;
+    }
+    .track-box h4{
+        font-size: 16px;
+    }
+    .track-box p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:425px) {
+    .track-box{
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .track-box .card-body{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .track-box img{
+        max-width: 40px;
+    }
+    .track-box h4{
+        font-size: 16px;
+    }
+    .track-box p{
+        font-size: 14px;
+    }
 }
 /* end */
 
 /* testimoni */
 
+/* berita */
 .card{
     border: none;
     height: 270px;
 }
+.card p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .card{
+        height: 200px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:425px) {
+    .card{
+        height: 250px;
+    }
+}
+
+@media (max-width:375px) {
+    .card{
+        height: 230px;
+    }
+}
+
+@media (max-width:375px) {
+    .card{
+        height: 200px;
+    }
+}
+/* end */
 
 /* subscribe */
 .sec-subs{
